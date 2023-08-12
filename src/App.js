@@ -7,8 +7,8 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
-import { Birthday,Baptismal } from './Pages/Services.js';
-import {Birthday,Baptismal,BDP1,BDP2,BDP3,Customization} from './Pages/Services.js;
+import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3} from './Pages/Services.js';
+
 
 
 
@@ -79,8 +79,21 @@ import {Birthday,Baptismal,BDP1,BDP2,BDP3,Customization} from './Pages/Services.
       break;
     case "/bdp3":
         Component = BDP3
-    case "/customization":
-        Component = Customization
+        break;
+    case "/customizationbdp":
+        Component = Customizationbdp
+      break;
+      case "/bp1":
+        Component = BP1
+      break;
+    case "/bp2":
+        Component = BP2
+      break;
+    case "/bp3":
+        Component = BP3
+        break;
+    case "/customizationbp":
+        Component = Customizationbdp
       break;
     
  
