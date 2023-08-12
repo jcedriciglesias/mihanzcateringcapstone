@@ -32,28 +32,28 @@ export function Birthday() {
         </h1>
         <ul>
             <li>
-                <a href="">
+                <a href="bdp1">
                     <h1>Birthday Promo #1</h1>
                     <p>50 Guest</p>
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="bdp2">
                 <h1>Birthday Promo #2</h1>
                     <p>100 Guest</p>
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="bdp3">
                 <h1>Birthday Promo #3</h1>
                     <p>150 Guest</p>
                 </a>
             </li>
 
             <li>
-                <a href="">
+                <a href="customization">
                     <h1>Customization base on your Budget</h1>
                 </a>
             </li>
@@ -68,7 +68,51 @@ export function Birthday() {
     </div>
     </>);
 }
+export function BDP1(){
+    return(<>
+    <div>
 
+
+
+    </div>
+    </>);
+}
+export function BDP2(){
+    return(<>
+    <div>
+
+
+
+    </div>
+    </>);
+}
+export function BDP3(){
+    return(<>
+    <div>
+
+
+
+    </div>
+    </>);
+}
+export function Customization(){
+    return(<>
+    <div>
+
+
+
+    </div>
+    </>);
+}
+export function Ratings(){
+    return(<>
+    <div>
+
+
+
+    </div>
+    </>);
+}
 export function Baptismal() {
     return(<>
     <div className='Event-Container'>
