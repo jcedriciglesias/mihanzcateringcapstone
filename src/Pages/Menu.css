@@ -1,0 +1,14 @@
+.menu-Container{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-selection-Card{
+    height: 40vh;
+    width: 25vh;
+    background-color: green;
+}
+.menu-Container h1{
+    display: flex
+}

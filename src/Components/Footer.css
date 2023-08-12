@@ -1,0 +1,33 @@
+
+/*Footer*/
+footer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ACC920;
+    font-family: Arial;
+}
+footer h1{
+
+    font-size: 67px;
+    margin-top: 10vh;
+    margin-left: 15vh;
+    margin-bottom: 10vh;
+    font-weight: 100;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer li{
+   list-style: none;
+}
+footer label{
+    font-size: 24px;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
