@@ -1,16 +1,19 @@
+import './Services.css';
+
 export default function Services()  {
     
     return(
         <>
-        <div className="services-Container">
+        <div className="Services-Container">
         <h1>SERVICES</h1>
+
         <ul>
             <li>
-                <a href="/"></a>
+                <a href="/">Birthday</a>
             </li>
 
             <li>
-                <a href="/"></a>
+                <a href="/">Baptismal</a>
             </li>
         </ul>
         </div>

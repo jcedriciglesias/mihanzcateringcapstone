@@ -55,12 +55,6 @@ export function Pork(){
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
 </div>
     
     
