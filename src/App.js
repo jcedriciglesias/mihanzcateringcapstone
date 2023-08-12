@@ -6,8 +6,8 @@ import Menu from './Pages/Menu.js';
 import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
-import{Pork} from './Pages/Menu.js';
-import{Beef} from './Pages/Menu.js';
+import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
+
 
 
 
@@ -44,6 +44,25 @@ import{Beef} from './Pages/Menu.js';
     case "/beef":
         Component = Beef
       break;
+    case "/chicken":
+        Component = Chicken;
+      break;
+    case "/fish":
+        Component = Fish
+      break;
+    case "/vegetables":
+        Component = Vegetables
+      break;
+    case "/pasta":
+        Component = Pasta
+      break;
+    case "/desserts":
+        Component = Desserts
+      break;
+    case "/drinks":
+        Component = Drinks
+      break;
+    
  
  
   }

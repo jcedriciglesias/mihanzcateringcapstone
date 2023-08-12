@@ -41,9 +41,21 @@
     text-align: center;
     
 }
-.Pork-Container{
+.Food-Container{
     color: white;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.Food-Container h1{
+    margin-bottom: 100px;
+}
+.Food-Container ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -52,4 +64,14 @@
     width: 40vh;
     display: flex;
     border: 1px solid;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px
+    
+}
+.Food-Card-Menu img{
+    height: 50%;
+    width: 100%;
+    border: 1px solid rebeccapurple;
 }

@@ -45,7 +45,7 @@ export default function Menu(){
 export function Pork(){
     return(
     <>
-<div className="Pork-Container">
+<div className="Food-Container">
 
     <h1>Pork Menu</h1>
 
@@ -70,9 +70,184 @@ export function Pork(){
 export function Beef(){
     return(
     <>
-<div className="Beef-Container">
+<div className="Food-Container">
 
     <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Chicken(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Fish(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function SeaFood(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Pasta(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Vegetables(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Desserts(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Drinks(){
+    return(
+    <>
+<div className="Food-Container">
+
+    <h1>Drinks Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
