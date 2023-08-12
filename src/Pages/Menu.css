@@ -70,13 +70,20 @@
     padding: 10px;
     background-color: aliceblue;
     color: black;
-    font-size: 20px;
 }
 .Food-name{
     color: black;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 30px;
 }
 .Food-Card-Menu img{
     height: 50%;
     width: 100%;
     border: 1px solid rebeccapurple;
+}
+.Food-Description{
+    margin: 0;
+    font-size: 20px;
 }
