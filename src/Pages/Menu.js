@@ -252,6 +252,7 @@ export function Drinks(){
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
