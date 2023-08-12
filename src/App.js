@@ -7,6 +7,8 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
+import { Birthday,Baptismal } from './Pages/Services.js';
+
 
 
 
@@ -61,6 +63,12 @@ import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Me
       break;
     case "/drinks":
         Component = Drinks
+      break;
+    case "/birthday":
+        Component = Birthday
+      break;
+    case "/baptismal":
+        Component = Baptismal
       break;
     
  

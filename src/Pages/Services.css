@@ -4,13 +4,81 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    margin-bottom: 100px;
 
+}
+.Services-Container h1 {
+
+    margin-bottom: 100px;
 }
 .Services-Container ul{
     display: flex;
     list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
 }
 .Services-Container a{
     text-decoration: none;
     color:white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.Services-Container li{
+    border: solid 1px ;
+    height: 60vh;
+    width: 40vh;
+}
+.Event-Container h1{
+    margin-bottom: 100px;
+    font-size: 67px;
+}
+.Event-Container{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.Event-Container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.Event-Container li {
+  
+    height:30vh;
+    width: 40vh;
+    margin: 20px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(129, 2, 133, 0.829), rgba(255, 2, 171, 0.678));
+}
+.Event-Container li:hover{
+    box-shadow: 0px 0px 10px yellow;
+}
+.Event-Container li h1{
+    margin: 0;
+    margin-top:20px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.Event-Container p{
+    margin: 0;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.Event-Container a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
 }
