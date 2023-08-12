@@ -29,9 +29,13 @@
 }
 
 .Services-Container li{
-    border: solid 1px ;
     height: 60vh;
     width: 40vh;
+    border-radius: 20px;
+    background: linear-gradient(75deg, rgba(166, 2, 199, 0.500),rgba(255, 0, 140, 0.500));
+}
+.Services-Container li:hover{
+    box-shadow: 0px 0px 10px yellow;
 }
 .Event-Container h1{
     margin-bottom: 100px;
