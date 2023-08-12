@@ -13,11 +13,11 @@ return(
         <li>
             <label for="getInTouch">Get in touch</label>
             <br/>
-           <a href="">Facebook</a>
+           <a href="/">Facebook</a>
         </li>
         <li>
             <label for="Contact">Contact</label><br/>
-            <a href=""> 0926-563-1143 <br/>
+            <a href="/"> 0926-563-1143 <br/>
                 0916-412-2250</a>
          </li>
          <li>

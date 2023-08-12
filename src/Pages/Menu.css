@@ -1,8 +1,9 @@
 .menu-Container{
-    height: 100vh;
+    color: white;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .menu-selection-Card{
     height: 40vh;
@@ -11,4 +12,30 @@
 }
 .menu-Container h1{
     display: flex
+}
+.menu-Card-Selection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.menu-Card-Selection a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+    
+
+.menu-Card-Selection li{
+    height: 50vh;
+    width: 40vh;
+    border : 1px solid;
+    margin: 20px;
+    list-style: none;
+    text-align: center;
+    
 }

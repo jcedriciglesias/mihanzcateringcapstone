@@ -6,6 +6,7 @@ import Menu from './Pages/Menu.js';
 import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
+import{Pork} from './Pages/Menu.js';
 
 
 
@@ -15,7 +16,7 @@ import Login from './Pages/Login.js';
 
 
 
-function App() {
+ function App() {
   let Component
   switch (window.location.pathname) {
     case "/":
@@ -36,9 +37,10 @@ function App() {
     case "/login":
         Component = Login
       break;
-    case "" :
-         Component = 
+    case "pork":
+        Component = Pork
       break;
+ 
   }
   return (
     <div>
