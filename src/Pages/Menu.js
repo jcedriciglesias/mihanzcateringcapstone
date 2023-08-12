@@ -45,8 +45,48 @@ export default function Menu(){
 export function Pork(){
     return(
     <>
-    <title>Pork</title>
+<div className="Pork-Container">
 
+    <h1>Pork Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
+    
+    
+    </>
+    );
+}
+export function Beef(){
+    return(
+    <>
+<div className="Beef-Container">
+
+    <h1>Beef Menu</h1>
+
+    <ul >
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-Description"> ipsum</p>
+        </li>
+    </ul>
+
+
+
+
+
+
+</div>
     
     
     </>

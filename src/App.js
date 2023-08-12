@@ -7,6 +7,7 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
 import{Pork} from './Pages/Menu.js';
+import{Beef} from './Pages/Menu.js';
 
 
 
@@ -37,9 +38,13 @@ import{Pork} from './Pages/Menu.js';
     case "/login":
         Component = Login
       break;
-    case "pork":
+    case "/pork":
         Component = Pork
       break;
+    case "/beef":
+        Component = Beef
+      break;
+ 
  
   }
   return (

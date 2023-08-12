@@ -11,7 +11,10 @@
     background-color: green;
 }
 .menu-Container h1{
-    display: flex
+    display: flex;
+    font-weight: 100;
+    font-size: 67px;
+   margin-bottom: 100px;
 }
 .menu-Card-Selection{
     display: flex;
@@ -23,10 +26,9 @@
     text-decoration: none;
     color: inherit;
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    font-size: 50px;
 }
     
 
@@ -38,4 +40,16 @@
     list-style: none;
     text-align: center;
     
+}
+.Pork-Container{
+    color: white;
+    height: 100%;
+}
+
+
+.Food-Card-Menu{
+    height: 60vh;
+    width: 40vh;
+    display: flex;
+    border: 1px solid;
 }
