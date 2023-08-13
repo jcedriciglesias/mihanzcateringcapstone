@@ -132,9 +132,11 @@ export function Ratings(){
 }
 export function BDPForm(){
      return(<> 
-        <div>
+        <div className="BDPForm-Container">
+            <button><a href="customizationbdp">Back</a></button><h1>Birthday Package</h1>
             <form action="">
-            <h1>Budget:</h1><input type="text" name="Customer-Budget" id="" /> 
+           <label htmlFor="budget">Budget:</label><input type="text" name="Customer-Budget" id="" /> <br />
+           <label htmlFor="guest">No. of Guest:</label><input type="text" name="Customer-Budget" id="" /> 
 
 
 
