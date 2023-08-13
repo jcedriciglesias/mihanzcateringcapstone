@@ -127,6 +127,7 @@
     color: inherit;
 }
 .BDPForm-Container{
+    height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -136,4 +137,12 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+}
+.BDPForm-Container input{
+    height: 5vh;
+    width: 60vh;
+}
+.BDPForm-Container h1{
+    font-weight: 100;
+    font-size: 67px;
 }

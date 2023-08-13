@@ -138,6 +138,25 @@ export function BDPForm(){
            <label htmlFor="budget">Budget:</label><input type="text" name="Customer-Budget" id="" /> <br />
            <label htmlFor="guest">No. of Guest:</label><input type="text" name="Customer-Budget" id="" /> 
 
+                <h1>Recommended</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+
+
+
+
+
+
+           <button className='Generate-btn'>Generate</button>
+
 
 
 
