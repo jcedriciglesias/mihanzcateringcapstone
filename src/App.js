@@ -7,7 +7,7 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
-import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm} from './Pages/Services.js';
+import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,Ratings} from './Pages/Services.js';
 
 
 
@@ -83,7 +83,10 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm}
     case "/customizationbdp":
         Component = Customizationbdp
       break;
-      case "/bp1":
+    case"/mostorderedmenu":
+        Component = Ratings
+      break;
+    case "/bp1":
         Component = BP1
       break;
     case "/bp2":
@@ -112,5 +115,6 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm}
     </div>
   );
 }
+
 
 export default App;

@@ -60,7 +60,7 @@ export function Birthday() {
             </li>
 
             <li>
-                <a href=""><h1>Most Ordered Menu</h1></a>
+                <a href="mostorderedmenu"><h1>Most Ordered Menu</h1></a>
             </li>
         </ul>
 
@@ -133,63 +133,37 @@ export function Ratings(){
 export function BDPForm(){
      return(<> 
         <div className="BDPForm-Container">
+
             <button><a href="customizationbdp">Back</a></button><h1>Birthday Package</h1>
-            <form action="">
-           <label htmlFor="budget">Budget:</label><input type="text" name="Customer-Budget" id="" /> <br />
-           <label htmlFor="guest">No. of Guest:</label><input type="text" name="Customer-Budget" id="" /> 
+        <form action="post">
+           <label >Budget:</label><input type="number" name="Customer-Budget"  required/> <br />
+           <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
+        </form>
 
-                <h1>Recommended</h1>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-
-
-
-
-
-
-
-           <button className='Generate-btn'>Generate</button>
-
-
-
-
-
-
-            </form>
+        <div className="rg-container">
+        <h1>Recommended</h1>
+                <ul>
+                    <li>ITEM 1</li>
+                    <li>ITEM 2</li>
+                    <li>ITEM 3</li>
+                    <li>ITEM 4</li>
+                    <li>ITEM 5</li>
+                    <li>ITEM 6</li>
+                </ul>
+           <div className="Generate-btn"><button >Generate</button></div>
+           </div>
+  
         </div>
-     
-     
-     
-     
-     
-     
+
       </>);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export function MostOrderedMenu() {
+    return(<>
+    <div>
+        
+    </div>
+    </>);
+}
 export function Baptismal() {
     return(<>
     <div className='Event-Container'>
@@ -226,7 +200,7 @@ export function Baptismal() {
             </li>
 
             <li>
-                <a href=""><h1>Most Ordered Menu</h1></a>
+                <a href="mostorderedmenu"><h1>Most Ordered Menu</h1></a>
             </li>
         </ul>
 
