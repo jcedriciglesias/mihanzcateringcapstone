@@ -101,21 +101,22 @@ export function BDP3(){
 }
 export function Customizationbdp(){
     return(<>
-    <div>
+    <div className="Birthday-Package-Information">
     <button><a href="/birthday">back</a></button>
     <h1>Birthday Package</h1>
     <h2>Customize your own Package</h2>
 
         <p><ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul></p>
+            <li>Amazing Deals</li>
+            <li>Make your reservation within 7 days for preparations</li>
+            <li>We can customize your package base on your budget</li>
+            <li>Customize your own package given to your budget and number person you provide</li>
+            <li>Budget must be 15,000 minimum that the cater can provide</li>
+            <li>Guest count must be 50 minimum that the cater can provide</li>
+        </ul>
+        </p>
 
-        <div><button><a href=""></a></button></div>
+        <div className="Button-Proceed"><button><a href="/bdpform">Proceed</a></button></div>
     </div>
     </>);
 }
@@ -129,6 +130,45 @@ export function Ratings(){
     </div>
     </>);
 }
+export function BDPForm(){
+     return(<> 
+        <div>
+            <form action="">
+            <h1>Budget:</h1><input type="text" name="Customer-Budget" id="" /> 
+
+
+
+
+
+
+            </form>
+        </div>
+     
+     
+     
+     
+     
+     
+      </>);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function Baptismal() {
     return(<>
     <div className='Event-Container'>

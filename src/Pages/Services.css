@@ -86,3 +86,43 @@
     flex-direction: column;
     align-items: center;
 }
+
+.Birthday-Package-Information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.Birthday-Package-Information h1{
+    font-weight: 100;
+    font-size: 67px;
+    margin-bottom: 50px;
+}
+.Birthday-Package-Information h2{
+    font-weight: 100;
+    font-size: 52px;
+}
+.Birthday-Package-Information li{
+    font-size: 23px;
+    margin: 10px;
+}
+.Button-Proceed{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 75%;
+}
+.Button-Proceed button{
+    width: 30vh;
+    background-color: #A2B92F;
+    height: 7vh;
+    border-radius: 50px;
+    font-size: 22px;
+    border:none;
+}
+.Button-Proceed a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -7,7 +7,7 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Login.js';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
-import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3} from './Pages/Services.js';
+import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm} from './Pages/Services.js';
 
 
 
@@ -95,6 +95,9 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3} from '.
     case "/customizationbp":
         Component = Customizationbdp
       break;
+    case "/bdpform":
+        Component = BDPForm
+      break;  
     
  
  
