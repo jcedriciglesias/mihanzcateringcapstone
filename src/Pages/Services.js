@@ -103,9 +103,19 @@ export function Customizationbdp(){
     return(<>
     <div>
     <button><a href="/birthday">back</a></button>
+    <h1>Birthday Package</h1>
+    <h2>Customize your own Package</h2>
 
+        <p><ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul></p>
 
-
+        <div><button><a href=""></a></button></div>
     </div>
     </>);
 }
