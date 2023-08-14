@@ -79,7 +79,7 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,
       break;
     case "/bdp3":
         Component = BDP3
-        break;
+      break;
     case "/customizationbdp":
         Component = Customizationbdp
       break;
@@ -94,7 +94,7 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,
       break;
     case "/bp3":
         Component = BP3
-        break;
+      break;
     case "/customizationbp":
         Component = Customizationbdp
       break;
