@@ -102,18 +102,21 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,
         Component = BDPForm
       break;  
     
- 
- 
   }
-  return (
-    <div>
-      <Nav />
 
-      <Component />
+    return (
+      <>
       
-      <Footer />
-    </div>
-  );
+      
+        <Nav />
+  
+        <Component />
+        
+        <Footer />
+      </>
+    );
+  
+  
 }
 
 

@@ -122,9 +122,10 @@
     font-size: 22px;
     border:none;
 }
-.Button-Proceed a{
+.Button-Proceed button a{
     text-decoration: none;
     color: inherit;
+    width: 100%;
 }
 .BDPForm-Container{
     height: 100%;

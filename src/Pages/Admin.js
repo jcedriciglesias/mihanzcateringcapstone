@@ -1,6 +1,23 @@
 import './Admin.css';
 
-export default function AdminNav(){
+
+
+
+export default function Admin(){
+    return(<>
+        <AdminNav />
+    
+    </>);
+}
+
+
+
+
+
+
+
+
+export function AdminNav(){
     return(<>
     <nav className="admin-nav">
     <div><h1>Mihanz Catering</h1></div>

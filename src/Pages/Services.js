@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import './Services.css';
 
 export default function Services()  {
     
     return(
         <>
+       
         <div className="Services-Container">
         <h1>SERVICES</h1>
 
@@ -131,13 +133,14 @@ export function Ratings(){
     </>);
 }
 export function BDPForm(){
+    const [guest, setGuest] = useState();
      return(<> 
         <div className="BDPForm-Container">
 
             <button><a href="customizationbdp">Back</a></button><h1>Birthday Package</h1>
         <form action="post">
            <label >Budget:</label><input type="number" name="Customer-Budget"  required/> <br />
-           <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
+           <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" value={guest} onChange={(e) => setGuest(Number(e.target.value))}min='50' required/> 
         </form>
 
         <div className="rg-container">
