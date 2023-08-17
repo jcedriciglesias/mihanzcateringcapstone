@@ -9,14 +9,17 @@
 
 }
 .Services-Container h1 {
-
+    font-size: 67px;
     margin-bottom: 100px;
 }
 .Services-Container ul{
     display: flex;
     list-style: none;
     width: 100%;
-    justify-content: space-evenly;
+    gap: 10%;
+    justify-content: center;
+   
+    
 }
 .Services-Container a{
     text-decoration: none;
@@ -46,6 +49,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
    
 }
@@ -53,36 +57,37 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-bottom: 100px;
     
 }
 .Event-Container li {
-  
-    height:30vh;
+    display: flex;
+    justify-content: center;
+    height:15vh;
     width: 40vh;
-    margin: 20px;
+    margin: 35px;
     border-radius: 20px;
-    background: linear-gradient(90deg, rgba(129, 2, 133, 0.829), rgba(255, 2, 171, 0.678));
+    background: linear-gradient(45deg, rgba(1, 81, 255, 0.74), rgba(255, 2, 171, 0.678));
 }
 .Event-Container li:hover{
     box-shadow: 0px 0px 10px yellow;
 }
 .Event-Container li h1{
     margin: 0;
-    margin-top:20px;
     font-weight: 100;
     font-size: 30px;
 }
 .Event-Container p{
     margin: 0;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 25px;
 }
 .Event-Container a{
     text-decoration: none;
     color: inherit;
     display: flex;
-    height: 100%;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }

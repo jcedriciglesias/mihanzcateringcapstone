@@ -13,7 +13,7 @@ return(
         <li>
             <label for="getInTouch">Get in touch</label>
             <br/>
-           <a href="/">Facebook</a>
+           <a href="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer">Facebook</a>
         </li>
         <li>
             <label for="Contact">Contact</label><br/>
@@ -22,11 +22,11 @@ return(
          </li>
          <li>
             <label for="Location">Location</label> <br/>
-            <a href="https://goo.gl/maps/o4Z2d3LZjFphzjLL8"> Calderon St. Subic
+            <a href="https://goo.gl/maps/eYMwkLUwLh3tVrsLA" target="_blank" rel="noreferrer"> Calderon St. Subic
                 Baliwag, Bulacan</a>
          </li>
     </ul>
-    <button><a href="admin">admin</a></button>
+   
 </footer>
 </>
 );

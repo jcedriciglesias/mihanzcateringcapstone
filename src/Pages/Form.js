@@ -9,11 +9,11 @@ export default function Login(){
 
                 <form>
                 <h1 className="Login">Login</h1>
-                <label>Email:</label> <input type="email" placeholder="Email Address" />
+                <label>Email</label> <input type="email" placeholder="Email Address" />
                    
-                    <label>Password: </label> <input type="password" placeholder="Password"/>
+                    <label>Password</label> <input type="password" placeholder="Password"/>
 
-                   <div className="btn-Login"><button>Login</button> </div> 
+                   <div className="btn-Login"><button>SignUp</button><button>Login</button> </div> 
                 </form>
         </div>
         </>

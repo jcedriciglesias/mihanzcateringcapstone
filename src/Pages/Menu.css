@@ -39,7 +39,11 @@
     margin: 20px;
     list-style: none;
     text-align: center;
+    border-radius: 20px;
     
+}
+.menu-Card-Selection li:hover{
+    box-shadow: 0px 0px 10px yellow;
 }
 .Food-Container{
     color: white;

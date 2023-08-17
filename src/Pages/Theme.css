@@ -1,0 +1,9 @@
+.Theme-Container{
+    display: flex;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+}
+.Theme-Container h1{
+    font-size: 67px;
+}

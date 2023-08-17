@@ -1,14 +1,14 @@
+import "./Theme.css";
 export default function Theme(){
-    return(
-        <>
-            <h1>
-                THEME
-            </h1>
-        
-        
-        </>
+    return(<><div className="Theme-Container">
+         <h1> Theme </h1>   
+            
+            
+            
+            
+            
 
 
 
-    );
+    </div></>);
 }

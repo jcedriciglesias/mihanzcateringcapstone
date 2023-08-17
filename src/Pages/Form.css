@@ -1,6 +1,4 @@
 .Login-Container{
-
-    
     display: flex;
     height: 100%;
     width: 100%;
@@ -37,16 +35,19 @@
 .btn-Login {
     margin-top: 50px;
     display:flex;
-    width: 100%;
-    right: 20%;
     position: relative;
     justify-content: flex-end;
 }
 .btn-Login button{
     background-color: #A2B92F;
-    width: 40vh;
-    height: 7vh;
+    width: 24vh;
+    height: 5vh;
+    margin: 20px;
     border-radius: 50px;
     font-size: 22px;
     border:none;
+}
+.btn-Login button:hover{
+    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+
 }

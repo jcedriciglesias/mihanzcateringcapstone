@@ -1,11 +1,12 @@
 
 /*Footer*/
 footer{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    background-color: #ACC920;
+    background-color: #000000;
     font-family: Arial;
+    color: white;
 }
 footer h1{
 

@@ -7,7 +7,7 @@ export default function Services()  {
         <>
        
         <div className="Services-Container">
-        <h1>SERVICES</h1>
+        <h1>Services</h1>
 
         <ul >
             <li >
@@ -21,10 +21,6 @@ export default function Services()  {
         </div>
         </>
     );
-
-
-
-
 }
 export function Birthday() {
     return(<>
@@ -57,7 +53,7 @@ export function Birthday() {
 
             <li>
                 <a href="customizationbp">
-                    <h1>Customization base on your Budget</h1>
+                    <h1>Customization  base<br /> on your Budget</h1>
                 </a>
             </li>
 
@@ -125,7 +121,17 @@ export function Customizationbdp(){
 export function Ratings(){
     return(<>
     <div>
-    <button>back<a href="/birthday"></a></button>
+    <button><a href="/birthday">back</a></button>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+
 
 
 

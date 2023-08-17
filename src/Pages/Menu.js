@@ -46,18 +46,17 @@ export function Pork(){
     return(
     <>
 <div className="Food-Container">
-
+<div><button><a href="/menu">back</a></button></div>
     <h1>Pork Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-</div>
-    
-    
+</div>  
     </>
     );
 }
@@ -65,21 +64,16 @@ export function Beef(){
     return(
     <>
 <div className="Food-Container">
-
+<div><button><a href="/menu">back</a></button></div>
     <h1>Beef Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
 </div>
     
     
@@ -90,24 +84,17 @@ export function Chicken(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Chicken Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
 </div>
-    
-    
     </>
     );
 }
@@ -115,24 +102,17 @@ export function Fish(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Fish Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
-</div>
-    
-    
+</div>   
     </>
     );
 }
@@ -140,21 +120,16 @@ export function SeaFood(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Seafood Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
 </div>
     
     
@@ -165,24 +140,17 @@ export function Pasta(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Pasta Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
-</div>
-    
-    
+</div>   
     </>
     );
 }
@@ -190,21 +158,16 @@ export function Vegetables(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Vegetables Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
 </div>
     
     
@@ -215,24 +178,17 @@ export function Desserts(){
     return(
     <>
 <div className="Food-Container">
-
-    <h1>Beef Menu</h1>
+<div><button><a href="/menu">back</a></button></div>
+    <h1>Desserts Menu</h1>
 
     <ul >
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
+            <p className="Food-name">name</p>
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
-</div>
-    
-    
+</div>   
     </>
     );
 }
@@ -240,7 +196,7 @@ export function Drinks(){
     return(
     <>
 <div className="Food-Container">
-
+        <div><button><a href="/menu">back</a></button></div>
     <h1>Drinks Menu</h1>
 
     <ul >
@@ -250,15 +206,7 @@ export function Drinks(){
             <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
-
-
-
-
-
-
-</div>
-    
-    
+</div>    
     </>
     );
 }
