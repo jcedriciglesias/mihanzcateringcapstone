@@ -1,5 +1,6 @@
 import Calendar from 'react-calendar';
-import './Home.css';
+import './Styles/Home.css';
+import { Link } from 'react-router-dom';
 export default function Home(){
     return (
         <>
@@ -23,7 +24,7 @@ function LandingPage() {
         <>
         <div className="landing_Page">
         <h1>Mihanz Catering Service</h1>
-        <button><a href="/login">Log In</a></button>
+        <button><Link to="/login">Log In</Link></button>
     </div>
         
         </>

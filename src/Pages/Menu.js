@@ -1,5 +1,6 @@
 
-import './Menu.css';
+import './Styles/Menu.css';
+import { Link } from 'react-router-dom';
 
 
 export default function Menu(){
@@ -10,31 +11,31 @@ export default function Menu(){
             <div><h1>Menu Selection</h1></div>
             <ul className="menu-Card-Selection">
                 <li>
-                    <a href="/pork">Pork</a>
+                    <Link to="/pork">Pork</Link>
                 </li>
                 <li>
-                    <a href="/beef">Beef</a>
+                    <Link to="/beef">Beef</Link>
                 </li>
                 <li>
-                    <a href="/chicken">Chicken</a>
+                    <Link to="/chicken">Chicken</Link>
                 </li>
                 <li>
-                    <a href="/fish">Fish</a>
+                    <Link to="/fish">Fish</Link>
                 </li>
                 <li>
-                    <a href="/seafood">SeaFood</a>
+                    <Link to="/seafood">SeaFood</Link>
                 </li>
                 <li>
-                    <a href="/pasta">Pasta</a>
+                    <Link to="/pasta">Pasta</Link>
                 </li>
                 <li>
-                    <a href="/vegetables">Vegetables</a>
+                    <Link to="/vegetables">Vegetables</Link>
                 </li>
                 <li>
-                    <a href="/desserts">Desserts</a>
+                    <Link to="/desserts">Desserts</Link>
                 </li>
                 <li>
-                    <a href="/drinks">Drinks</a>
+                    <Link href="/drinks">Drinks</Link>
                 </li>
             </ul>
 
@@ -46,7 +47,7 @@ export function Pork(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Pork Menu</h1>
 
     <ul >
@@ -64,7 +65,7 @@ export function Beef(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Beef Menu</h1>
 
     <ul >
@@ -84,7 +85,7 @@ export function Chicken(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Chicken Menu</h1>
 
     <ul >
@@ -102,7 +103,7 @@ export function Fish(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Fish Menu</h1>
 
     <ul >
@@ -120,7 +121,7 @@ export function SeaFood(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Seafood Menu</h1>
 
     <ul >
@@ -140,7 +141,7 @@ export function Pasta(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Pasta Menu</h1>
 
     <ul >
@@ -158,7 +159,7 @@ export function Vegetables(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Vegetables Menu</h1>
 
     <ul >
@@ -178,7 +179,7 @@ export function Desserts(){
     return(
     <>
 <div className="Food-Container">
-<div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Desserts Menu</h1>
 
     <ul >
@@ -196,7 +197,7 @@ export function Drinks(){
     return(
     <>
 <div className="Food-Container">
-        <div><button><a href="/menu">back</a></button></div>
+<div><button><Link to="/menu">back</Link></button></div>
     <h1>Drinks Menu</h1>
 
     <ul >

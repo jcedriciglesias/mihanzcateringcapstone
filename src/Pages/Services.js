@@ -1,5 +1,7 @@
 
-import './Services.css';
+import { Link } from 'react-router-dom';
+import './Styles/Services.css';
+import { useState } from 'react';
 
 export default function Services()  {
     
@@ -11,11 +13,11 @@ export default function Services()  {
 
         <ul >
             <li >
-                <a href="birthday">Birthday</a>
+                <Link to="/birthday">Birthday</Link>
             </li>
 
             <li>
-                <a href="baptismal">Baptismal</a>
+                <Link to="/baptismal">Baptismal</Link>
             </li>
         </ul>
         </div>
@@ -25,40 +27,40 @@ export default function Services()  {
 export function Birthday() {
     return(<>
     <div className='Event-Container'>
-        <button><a href="/services">back</a></button>
+        <button><Link to="/services">back</Link></button>
         <h1>
             Birthday Promo
         </h1>
         <ul>
             <li>
-                <a href="bdp1">
+                <Link to="/bdp1">
                     <h1>Birthday Promo #1</h1>
                     <p>50 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="bdp2">
+                <Link to="/bdp2">
                 <h1>Birthday Promo #2</h1>
                     <p>100 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="bdp3">
+                <Link to="/bdp3">
                 <h1>Birthday Promo #3</h1>
                     <p>150 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="customizationbp">
-                    <h1>Customization  base<br /> on your Budget</h1>
-                </a>
+                <Link to="/customizationbdp">
+                    <h1>Customization base<br /> on your Budget</h1>
+                </Link>
             </li>
 
             <li>
-                <a href="mostorderedmenu"><h1>Most Ordered Menu</h1></a>
+                <Link to="/mostorderedmenu"><h1>Most Ordered Menu</h1></Link>
             </li>
         </ul>
 
@@ -70,7 +72,7 @@ export function Birthday() {
 export function BDP1(){
     return(<>
     <div>
-        <button><a href="/birthday">back</a></button>
+        <button><Link to="/birthday">back</Link></button>
 
 
 
@@ -80,7 +82,7 @@ export function BDP1(){
 export function BDP2(){
     return(<>
     <div>
-    <button><a href="/birthday">back</a></button>
+    <button><Link to="/birthday">back</Link></button>
 
 
 
@@ -90,7 +92,7 @@ export function BDP2(){
 export function BDP3(){
     return(<>
     <div>
-    <button><a href="/birthday">back</a></button>
+    <button><Link to="/birthday">back</Link></button>
 
 
 
@@ -100,7 +102,7 @@ export function BDP3(){
 export function Customizationbdp(){
     return(<>
     <div className="Birthday-Package-Information">
-    <button><a href="/birthday">back</a></button>
+    <button><Link to="/birthday">back</Link></button>
     <h1>Birthday Package</h1>
     <h2>Customize your own Package</h2>
 
@@ -114,14 +116,14 @@ export function Customizationbdp(){
         </ul>
         </p>
 
-        <div className="Button-Proceed"><button><a href="/bdpform">Proceed</a></button></div>
+        <div className="Button-Proceed"><button><Link to="/bdpform">Proceed</Link></button></div>
     </div>
     </>);
 }
 export function Ratings(){
     return(<>
     <div>
-    <button><a href="/birthday">back</a></button>
+    <button><Link to="/birthday">back</Link></button>
         <ul>
             <li></li>
             <li></li>
@@ -142,7 +144,7 @@ export function BDPForm(){
      return(<> 
         <div className="BDPForm-Container">
 
-            <button><a href="customizationbdp">Back</a></button><h1>Birthday Package</h1>
+            <button><Link to="customizationbdp">Back</Link></button><h1>Birthday Package</h1>
         <form action="post">
            <label >Budget:</label><input type="number" name="Customer-Budget" min='15000'  required/> <br />
            <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
@@ -158,7 +160,7 @@ export function BDPForm(){
                     <li>ITEM 5</li>
                     <li>ITEM 6</li>
                 </ul>
-           <div className="Generate-btn"><button>Generate</button>  <button><a href="/">Proceed</a></button></div>
+           <div className="Generate-btn"><button>Generate</button>  <button><Link to="/">Proceed</Link></button></div>
            </div>
   
         </div>
@@ -175,40 +177,40 @@ export function MostOrderedMenu() {
 export function Baptismal() {
     return(<>
     <div className='Event-Container'>
-        <button><a href="/services">back</a></button>
+        <button><Link to="/services">back</Link></button>
         <h1>
             Baptismal Promo
         </h1>
         <ul>
             <li>
-                <a href="bp1">
+                <Link to="/bp1">
                     <h1>Baptismal Promo #1</h1>
                     <p>50 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="bp2">
+                <Link to="/bp2">
                 <h1>Baptismal Promo #2</h1>
                     <p>100 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="bp3">
+                <Link to="/bp3">
                 <h1>Baptismal Promo #3</h1>
                     <p>150 Guest</p>
-                </a>
+                </Link>
             </li>
 
             <li>
-                <a href="customizationbp">
-                    <h1>Customization base on your Budget</h1>
-                </a>
+                <Link to="/customizationbp">
+                    <h1>Customization base <br /> on your Budget</h1>
+                </Link>
             </li>
 
             <li>
-                <a href="mostorderedmenu"><h1>Most Ordered Menu</h1></a>
+                <Link to="/mostorderedmenu"><h1>Most Ordered Menu</h1></Link>
             </li>
         </ul>
 
@@ -220,7 +222,7 @@ export function Baptismal() {
 export function BP1(){
     return(<>
     <div>
-        <button><a href="/baptismal">back</a></button>
+        <button><Link to="/baptismal">back</Link></button>
 
 
 
@@ -230,7 +232,7 @@ export function BP1(){
 export function BP2(){
     return(<>
     <div>
-    <button><a href="/baptismal">back</a></button>
+    <button><Link to="/baptismal">back</Link></button>
 
 
 
@@ -240,7 +242,7 @@ export function BP2(){
 export function BP3(){
     return(<>
     <div>
-    <button><a href="/baptismal">back</a></button>
+    <button><Link to="/baptismal">back</Link></button>
 
 
 
@@ -249,32 +251,48 @@ export function BP3(){
 }
 export function Customizationbp(){
     return(<>
-    <div>
-    <button><a href="/baptismal">back</a></button>
+    <div className="BDPForm-Container">
 
+<button><Link to="/customizationbp">Back</Link></button><h1>Baptismal Package</h1>
+<form action="post">
+<label >Budget:</label><input type="number" name="Customer-Budget" min='15000'  required/> <br />
+<label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
+</form>
 
+<div className="rg-container">
+<h1>Recommended</h1>
+    <ul>
+        <li>ITEM 1</li>
+        <li>ITEM 2</li>
+        <li>ITEM 3</li>
+        <li>ITEM 4</li>
+        <li>ITEM 5</li>
+        <li>ITEM 6</li>
+    </ul>
+<div className="Generate-btn"><button>Generate</button>  <button><Link to="/reservationform">Proceed</Link></button></div>
+</div>
 
-    </div>
+</div>
     </>);
 }
 export function ReservationForm(){
     return(<>
-    <div>
+    <div className="Reservation-Container">
         <h1>Reservation Form</h1>
         <h2>PLEASE READ FIRST</h2>
-        <p>Reservation Package for {this.Guest} Guest The Package you chose already includes the following:</p>
+        <p>Reservation Package for Guest The Package you chose already includes the following:</p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+            <li>Item6</li>
+            <li>Item7</li>
+            <li>Item8</li>
+            <li>Item9</li>
+            <li>Item10</li>
+            <li>Item11</li>
         </ul>
 
     </div>
