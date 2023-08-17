@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import Nav from'./Components/Nav.js';
 import Footer from'./Components/Footer.js';
 import './App.css';
@@ -5,19 +6,9 @@ import Home from './Pages/Home.js';
 import Menu from './Pages/Menu.js';
 import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
-import Login from './Pages/Login.js';
-import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks} from './Pages/Menu.js';
+import Login from './Pages/Form.js';
+import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks,SeaFood} from './Pages/Menu.js';
 import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,Ratings} from './Pages/Services.js';
-
-
-
-
-
-
-
-
-
-
 
 
  function App() {
@@ -52,6 +43,9 @@ import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,
       break;
     case "/fish":
         Component = Fish
+      break;
+    case "/seafood":
+        Component = SeaFood
       break;
     case "/vegetables":
         Component = Vegetables

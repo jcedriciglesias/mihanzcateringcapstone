@@ -1,3 +1,4 @@
+import Calendar from 'react-calendar';
 import './Home.css';
 export default function Home(){
     return (
@@ -61,7 +62,7 @@ function Reservationinformation(){
             <li>We can customize your package base on your budget</li>
             <li>Check out our menu below</li>
         </ul>
-        <div><button>Check out our Menu</button></div>
+        <div><button> <a href="menu">Check out our Menu</a> </button></div>
 
     </div>
         </>
@@ -81,10 +82,7 @@ return (
 </div>
 
 <div>
-    <tableable>
-        <thead></thead>
-        <tbody></tbody>
-    </tableable>
+    <Calendar /> 
 </div>
 
 

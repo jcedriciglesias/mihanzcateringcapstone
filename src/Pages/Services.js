@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import './Services.css';
 
 export default function Services()  {
@@ -125,7 +125,7 @@ export function Customizationbdp(){
 export function Ratings(){
     return(<>
     <div>
-    <button><a href="/birthday"></a></button>
+    <button>back<a href="/birthday"></a></button>
 
 
 
@@ -138,7 +138,7 @@ export function BDPForm(){
 
             <button><a href="customizationbdp">Back</a></button><h1>Birthday Package</h1>
         <form action="post">
-           <label >Budget:</label><input type="number" name="Customer-Budget"  required/> <br />
+           <label >Budget:</label><input type="number" name="Customer-Budget" min='15000'  required/> <br />
            <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
         </form>
 
