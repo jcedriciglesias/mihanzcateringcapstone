@@ -1,7 +1,6 @@
 
 import { Link } from 'react-router-dom';
 import './Styles/Services.css';
-import { useState } from 'react';
 
 export default function Services()  {
     
@@ -38,27 +37,23 @@ export function Birthday() {
                     <p>50 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/bdp2">
                 <h1>Birthday Promo #2</h1>
                     <p>100 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/bdp3">
                 <h1>Birthday Promo #3</h1>
                     <p>150 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/customizationbdp">
                     <h1>Customization base<br /> on your Budget</h1>
                 </Link>
             </li>
-
             <li>
                 <Link to="/mostorderedmenu"><h1>Most Ordered Menu</h1></Link>
             </li>
@@ -73,9 +68,6 @@ export function BDP1(){
     return(<>
     <div>
         <button><Link to="/birthday">back</Link></button>
-
-
-
     </div>
     </>);
 }
@@ -105,7 +97,6 @@ export function Customizationbdp(){
     <button><Link to="/birthday">back</Link></button>
     <h1>Birthday Package</h1>
     <h2>Customize your own Package</h2>
-
         <p><ul>
             <li>Amazing Deals</li>
             <li>Make your reservation within 7 days for preparations</li>
@@ -115,7 +106,6 @@ export function Customizationbdp(){
             <li>Guest count must be 50 minimum that the cater can provide</li>
         </ul>
         </p>
-
         <div className="Button-Proceed"><button><Link to="/bdpform">Proceed</Link></button></div>
     </div>
     </>);
@@ -132,11 +122,6 @@ export function Ratings(){
             <li></li>
             <li></li>
         </ul>
-
-
-
-
-
     </div>
     </>);
 }
@@ -144,9 +129,9 @@ export function BDPForm(){
      return(<> 
         <div className="BDPForm-Container">
 
-            <button><Link to="customizationbdp">Back</Link></button><h1>Birthday Package</h1>
+            <button><Link to="/customizationbdp">Back</Link></button><h1>Birthday Package</h1>
         <form action="post">
-           <label >Budget:</label><input type="number" name="Customer-Budget" min='15000'  required/> <br />
+           <label >Budget:</label><input type="number" name="Customer-Budget" min='15000' placeholder="Minimum of 15,000" required/> <br />
            <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
         </form>
 
@@ -188,34 +173,27 @@ export function Baptismal() {
                     <p>50 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/bp2">
                 <h1>Baptismal Promo #2</h1>
                     <p>100 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/bp3">
                 <h1>Baptismal Promo #3</h1>
                     <p>150 Guest</p>
                 </Link>
             </li>
-
             <li>
                 <Link to="/customizationbp">
                     <h1>Customization base <br /> on your Budget</h1>
                 </Link>
             </li>
-
             <li>
                 <Link to="/mostorderedmenu"><h1>Most Ordered Menu</h1></Link>
             </li>
         </ul>
-
-
-
     </div>
     </>);
 }
@@ -233,9 +211,6 @@ export function BP2(){
     return(<>
     <div>
     <button><Link to="/baptismal">back</Link></button>
-
-
-
     </div>
     </>);
 }
@@ -249,13 +224,35 @@ export function BP3(){
     </div>
     </>);
 }
+
 export function Customizationbp(){
+    return(<>
+    <div className="Birthday-Package-Information">
+    <button><Link to="/baptismal">back</Link></button>
+    <h1>Baptismal Package</h1>
+    <h2>Customize your own Package</h2>
+
+        <p><ul>
+            <li>Amazing Deals</li>
+            <li>Make your reservation within 7 days for preparations</li>
+            <li>We can customize your package base on your budget</li>
+            <li>Customize your own package given to your budget and number person you provide</li>
+            <li>Budget must be 15,000 minimum that the cater can provide</li>
+            <li>Guest count must be 50 minimum that the cater can provide</li>
+        </ul>
+        </p>
+
+        <div className="Button-Proceed"><button><Link to="/bdpform">Proceed</Link></button></div>
+    </div>
+    </>);
+}
+export function BPForm(){
     return(<>
     <div className="BDPForm-Container">
 
 <button><Link to="/customizationbp">Back</Link></button><h1>Baptismal Package</h1>
 <form action="post">
-<label >Budget:</label><input type="number" name="Customer-Budget" min='15000'  required/> <br />
+<label >Budget:</label><input type="number" name="Customer-Budget" min='15000' placeholder="Minimum of 15,000" required/> <br />
 <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
 </form>
 

@@ -63,7 +63,7 @@ function Reservationinformation(){
             <li>We can customize your package base on your budget</li>
             <li>Check out our menu below</li>
         </ul>
-        <div><button> <a href="menu">Check out our Menu</a> </button></div>
+        <div><button> <Link to="menu">Check out our Menu</Link> </button></div>
 
     </div>
         </>

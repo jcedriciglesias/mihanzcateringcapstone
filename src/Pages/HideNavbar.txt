@@ -1,0 +1,22 @@
+import { useState,useEffect } from "react"
+import { useLocation } from "react-router-dom"
+const HideNavbar=({children}) => {
+
+    const location = useLocation;
+    const [ShowNavBar, setShowNavBar] = useState(false)
+
+
+        useEffect(() =>{
+            console.log("this is location: " + location)
+                if  (location.pathname === '/login') {
+                    setShowNavBar(false);
+                }else{
+                    setShowNavBar(true);
+                }
+        },[location])
+    return(
+        <div>{ShowNavBar && children} </div>
+    )
+}
+export default HideNavbar   
+

@@ -1,4 +1,4 @@
-
+import PorkImg from './Image/Beef-and-Broccoli-Oyster.jpg';
 import './Styles/Menu.css';
 import { Link } from 'react-router-dom';
 
@@ -43,19 +43,19 @@ export default function Menu(){
     </>
     );
 }
+
 export function Pork(){
     return(
     <>
 <div className="Food-Container">
 <div><button><Link to="/menu">back</Link></button></div>
     <h1>Pork Menu</h1>
-
-    <ul >
-        <li className="Food-Card-Menu">
+    <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
+    <ul >
+        
     </ul>
 </div>  
     </>
@@ -69,10 +69,26 @@ export function Beef(){
     <h1>Beef Menu</h1>
 
     <ul >
+    <li className="Food-Card-Menu">
+            <img  src={PorkImg} alt="Beef and Broccoli Oyster" />
+            <div className="Food-name"><p >Beef and Broccoli Oyster</p> </div>
+          
+        </li>
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
+        </li>
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-name">name</p>
+        </li>
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-name">name</p>
+        </li>
+        <li className="Food-Card-Menu">
+            <img src="/" alt="" />
+            <p className="Food-name">name</p>
         </li>
     </ul>
 </div>
@@ -92,7 +108,6 @@ export function Chicken(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>
@@ -110,7 +125,6 @@ export function Fish(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>   
@@ -128,7 +142,6 @@ export function SeaFood(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>
@@ -148,7 +161,6 @@ export function Pasta(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>   
@@ -166,7 +178,6 @@ export function Vegetables(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>
@@ -186,7 +197,6 @@ export function Desserts(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>   
@@ -204,7 +214,6 @@ export function Drinks(){
         <li className="Food-Card-Menu">
             <img src="/" alt="" />
             <p className="Food-name">name</p>
-            <p className="Food-Description"> ipsum</p>
         </li>
     </ul>
 </div>    

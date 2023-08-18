@@ -26,3 +26,8 @@ nav a{
 nav h1{
     font-size: 35px;
 }
+nav a.active{
+    color: yellowgreen;
+    text-decoration: dashed;
+    border-bottom: solid;
+}
