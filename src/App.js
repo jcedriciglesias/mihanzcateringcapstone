@@ -11,9 +11,9 @@ import Login from './Pages/Form.jsx';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks,SeaFood} from './Pages/Menu.js';
 import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,Ratings,Customizationbp,ReservationForm} from './Pages/Services.js';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
-
-
+import { useEffect, useState } from 'react';
+import { db } from './firebase-config.js';
+import {collection, getDocs} from 'firebase/firestore';
 
  function App() {
   const pathname = useLocation();
@@ -21,6 +21,26 @@ import { useEffect } from 'react';
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth"});
   },[pathname]);
+
+const [Mcuser, setMcuser] =useState([]);
+const mcuserCollectionRef = collection(db,"mc-userprofile")
+useEffect (() => {
+
+
+  const getMcuser = async () => {
+    
+    const data = await getDocs(mcuserCollectionReferences);
+    console.log(data);
+  };
+  getMcuser ()
+},[]);
+
+
+
+
+
+
+
     return (
       <>
 
