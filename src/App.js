@@ -1,5 +1,3 @@
-/* eslint-disable default-case */
-
 import Nav from'./Components/Nav.js';
 import Footer from'./Components/Footer.js';
 import './App.css';
@@ -9,31 +7,24 @@ import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
 import Login from './Pages/Form.jsx';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks,SeaFood} from './Pages/Menu.js';
-import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,Ratings,Customizationbp,ReservationForm} from './Pages/Services.js';
+import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,BPForm,Ratings,Customizationbp,ReservationForm} from './Pages/Services.js';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { db } from './firebase-config.js';
-import {collection, getDocs} from 'firebase/firestore';
+import { useEffect,} from 'react';
+
 
  function App() {
   const pathname = useLocation();
 
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth"});
+
+   
+
+
   },[pathname]);
 
-const [Mcuser, setMcuser] =useState([]);
-const mcuserCollectionRef = collection(db,"mc-userprofile")
-useEffect (() => {
 
-
-  const getMcuser = async () => {
-    
-    const data = await getDocs(mcuserCollectionReferences);
-    console.log(data);
-  };
-  getMcuser ()
-},[]);
 
 
 
@@ -73,6 +64,7 @@ useEffect (() => {
           <Route path="/customizationbp" element={<Customizationbp/>}/>
           <Route path="/mostorderedmenu" element={<Ratings/>}/>
           <Route path="/bdpform" element={<BDPForm/>}/>
+          <Route path="/bpform" element={<BPForm/>}/>
           <Route path="/reservationform" element={<ReservationForm/>}/>
         </Routes>
         

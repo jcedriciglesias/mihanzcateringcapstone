@@ -1,0 +1,34 @@
+.popup{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.900);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.popup-inner{
+    display: flex;
+    position: relative;
+    padding-right: 36px;
+    height: 55vh;
+    width: 100%;
+    max-width: 50%;
+    background-color: wheat;
+    justify-content: space-around;
+}
+.popup-inner .close-btn{
+    position: absolute;
+    font-size: 30px;
+    background-color: transparent;
+    border-style: none;
+    right: 1%;
+    color: red;
+    cursor: pointer;
+}.popup-inner img{
+    width: 50%;
+}

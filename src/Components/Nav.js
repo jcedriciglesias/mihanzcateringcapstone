@@ -1,5 +1,7 @@
 import './Nav.css';
 import { NavLink } from "react-router-dom";
+import { FaHouseChimney } from "react-icons/fa6";
+import { FaBookOpen, FaBrush } from 'react-icons/fa';
 
 
 export default function Navbar (){
@@ -10,16 +12,16 @@ export default function Navbar (){
 
     <ul>
         <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/"><FaHouseChimney/> Home</NavLink>
         </li>
         <li>
-            <NavLink to="/menu">Menu</NavLink>
+            <NavLink to="/menu"><FaBookOpen/> Menu</NavLink>
         </li>
         <li>
             <NavLink to="/services">Services</NavLink>
         </li>
         <li>
-            <NavLink to="/theme">Theme</NavLink>
+            <NavLink to="/theme"><FaBrush/> Theme</NavLink>
         </li>
     </ul>
 

@@ -6,10 +6,12 @@ html{
     background:linear-gradient( rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.562)), url("Untitled\ design\ \(1\).png"), no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
 }
 body{
     height: 100vh;
     width: auto;
+    
 
 }
 .landing_Page{
@@ -103,16 +105,20 @@ align-items: center;
     position: absolute;
     left:75%;
 }
- button:hover{
+.landing_Page button:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.reservation-Info button:hover{
     box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 /*calendar-dates*/
 .calendar-Date{
     display: flex;
-    flex-direction: column;
+
     height: 100vh;
     color: white;
     background-color: #0B360F;
+    justify-content: space-between;
 }
 .calendar-Date h1{
     font-size: 67px;

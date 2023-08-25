@@ -1,4 +1,7 @@
+import { FaFacebook, FaPhone } from 'react-icons/fa';
 import './Footer.css';
+import { FaMapLocationDot, FaMobileScreen } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 
 export default function Footer (){
@@ -12,18 +15,17 @@ return(
     <ul>
         <li>
             <label for="getInTouch">Get in touch</label>
-            <br/>
-           <a href="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer">Facebook</a>
+            <br/><Link href="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer"><FaFacebook/>Facebook</Link>
         </li>
         <li>
             <label for="Contact">Contact</label><br/>
-            <a href="/"> 0926-563-1143 <br/>
-                0916-412-2250</a>
+            <Link to="#"> <FaMobileScreen/>0926-563-1143 <br/>
+               <FaMobileScreen/> 0916-412-2250</Link>
          </li>
          <li>
             <label for="Location">Location</label> <br/>
-            <a href="https://goo.gl/maps/eYMwkLUwLh3tVrsLA" target="_blank" rel="noreferrer"> Calderon St. Subic
-                Baliwag, Bulacan</a>
+            <Link to="https://goo.gl/maps/eYMwkLUwLh3tVrsLA" target="_blank" rel="noreferrer"><FaMapLocationDot/> Calderon St. Subic
+                Baliwag, Bulacan</Link>
          </li>
     </ul>
    

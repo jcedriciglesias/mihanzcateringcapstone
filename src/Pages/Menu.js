@@ -1,6 +1,11 @@
 import PorkImg from './Image/Beef-and-Broccoli-Oyster.jpg';
 import './Styles/Menu.css';
 import { Link } from 'react-router-dom';
+import Popup from '../Components/Popup';
+import { useState } from 'react';
+import { BsArrowRight } from 'react-icons/bs';
+import {  IoIosArrowBack } from "react-icons/io";
+
 
 
 export default function Menu(){
@@ -45,14 +50,19 @@ export default function Menu(){
 }
 
 export function Pork(){
+const [buttonPopup, setButtonPopup] = useState(false); 
     return(
     <>
+    
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Pork Menu</h1>
-    <li className="Food-Card-Menu">
-            <img src="/" alt="" />
+    <li className="Food-Card-Menu" >
+            <img src="/" alt=""onClick={() => setButtonPopup(true)} />
             <p className="Food-name">name</p>
+            <Popup trigger={buttonPopup} setTrigger ={setButtonPopup}>
+                <h3>hello world</h3>
+            </Popup>
         </li>
     <ul >
         
@@ -62,16 +72,23 @@ export function Pork(){
     );
 }
 export function Beef(){
+    const [buttonPopup, setButtonPopup] = useState(false); 
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Beef Menu</h1>
 
     <ul >
-    <li className="Food-Card-Menu">
-            <img  src={PorkImg} alt="Beef and Broccoli Oyster" />
+    <li className="Food-Card-Menu" >
+            <img  src={PorkImg} alt="Beef and Broccoli Oyster" onClick={() => setButtonPopup(true)}/>
             <div className="Food-name"><p >Beef and Broccoli Oyster</p> </div>
+            <Popup trigger={buttonPopup} setTrigger ={setButtonPopup}>
+            <img  src={PorkImg} alt="Beef and Broccoli Oyster"/>
+            <div className="popup-container">
+            <div className="Food-name"><h2 >Beef and Broccoli Oyster</h2><br /><p className="Food-Description">description</p> </div>
+            </div>
+            </Popup>
           
         </li>
         <li className="Food-Card-Menu">
@@ -101,7 +118,7 @@ export function Chicken(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Chicken Menu</h1>
 
     <ul >
@@ -118,7 +135,7 @@ export function Fish(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Fish Menu</h1>
 
     <ul >
@@ -135,7 +152,7 @@ export function SeaFood(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Seafood Menu</h1>
 
     <ul >
@@ -154,7 +171,7 @@ export function Pasta(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Pasta Menu</h1>
 
     <ul >
@@ -171,7 +188,7 @@ export function Vegetables(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Vegetables Menu</h1>
 
     <ul >
@@ -190,7 +207,7 @@ export function Desserts(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Desserts Menu</h1>
 
     <ul >
@@ -207,7 +224,7 @@ export function Drinks(){
     return(
     <>
 <div className="Food-Container">
-<div><button><Link to="/menu">back</Link></button></div>
+<div><button className="back-btn"><Link to="/menu"><BsArrowRight/></Link></button></div>
     <h1>Drinks Menu</h1>
 
     <ul >

@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import "./Styles/Form.css";
 export default function Login(){
-    const[login, setLogin] = useState();
     return(
         <>
         <div className="Login-Container">

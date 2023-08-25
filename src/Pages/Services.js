@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import './Styles/Services.css';
+import { BsArrowRight } from 'react-icons/bs';
 
 export default function Services()  {
     
@@ -11,11 +12,11 @@ export default function Services()  {
         <h1>Services</h1>
 
         <ul >
-            <li >
+            <li className="bd">
                 <Link to="/birthday">Birthday</Link>
             </li>
 
-            <li>
+            <li className="bp">
                 <Link to="/baptismal">Baptismal</Link>
             </li>
         </ul>
@@ -26,7 +27,7 @@ export default function Services()  {
 export function Birthday() {
     return(<>
     <div className='Event-Container'>
-        <button><Link to="/services">back</Link></button>
+        <div className="btn-position"><button className="back-btn"><Link to="/services"><BsArrowRight/></Link></button></div> 
         <h1>
             Birthday Promo
         </h1>
@@ -67,24 +68,25 @@ export function Birthday() {
 export function BDP1(){
     return(<>
     <div>
-        <button><Link to="/birthday">back</Link></button>
+    <div className="btn-position"> <button className="back-btn"><Link to="/birthday"><BsArrowRight/></Link></button></div>
+    
     </div>
     </>);
 }
 export function BDP2(){
     return(<>
     <div>
-    <button><Link to="/birthday">back</Link></button>
+    
 
 
-
+    <div className="btn-position"><button className="back-btn"><Link to="/birthday"><BsArrowRight/></Link></button></div>
     </div>
     </>);
 }
 export function BDP3(){
     return(<>
     <div>
-    <button><Link to="/birthday">back</Link></button>
+    <div className="btn-position"><button className="back-btn"><Link to="/birthday"><BsArrowRight/></Link></button></div>
 
 
 
@@ -94,7 +96,7 @@ export function BDP3(){
 export function Customizationbdp(){
     return(<>
     <div className="Birthday-Package-Information">
-    <button><Link to="/birthday">back</Link></button>
+    <div className="btn-position"><button className="back-btn"><Link to="/birthday"><BsArrowRight/></Link></button></div>
     <h1>Birthday Package</h1>
     <h2>Customize your own Package</h2>
         <p><ul>
@@ -111,9 +113,10 @@ export function Customizationbdp(){
     </>);
 }
 export function Ratings(){
+    
     return(<>
     <div>
-    <button><Link to="/birthday">back</Link></button>
+    <div className="btn-position"><button className="back-btn"><Link to="/birthday"><BsArrowRight/></Link></button></div>
         <ul>
             <li></li>
             <li></li>
@@ -129,7 +132,7 @@ export function BDPForm(){
      return(<> 
         <div className="BDPForm-Container">
 
-            <button><Link to="/customizationbdp">Back</Link></button><h1>Birthday Package</h1>
+          <div className="btn-position">  <button className="back-btn"><Link to="/customizationbdp"><BsArrowRight/></Link></button><h1>Birthday Package</h1></div>
         <form action="post">
            <label >Budget:</label><input type="number" name="Customer-Budget" min='15000' placeholder="Minimum of 15,000" required/> <br />
            <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
@@ -162,8 +165,8 @@ export function MostOrderedMenu() {
 export function Baptismal() {
     return(<>
     <div className='Event-Container'>
-        <button><Link to="/services">back</Link></button>
-        <h1>
+    <div className="btn-position">  <button className="back-btn"><Link to="/services"><BsArrowRight/></Link></button></div>       
+    <h1>
             Baptismal Promo
         </h1>
         <ul>
@@ -200,8 +203,7 @@ export function Baptismal() {
 export function BP1(){
     return(<>
     <div>
-        <button><Link to="/baptismal">back</Link></button>
-
+    <div className="btn-position">  <button className="back-btn"><Link to="/baptismal"><BsArrowRight/></Link></button><h1>Baptismal Package</h1></div>
 
 
     </div>
@@ -210,15 +212,13 @@ export function BP1(){
 export function BP2(){
     return(<>
     <div>
-    <button><Link to="/baptismal">back</Link></button>
-    </div>
+    <div className="btn-position">  <button className="back-btn"><Link to="/baptismal"><BsArrowRight/></Link></button><h1>Baptismal Package</h1></div>    </div>
     </>);
 }
 export function BP3(){
     return(<>
     <div>
-    <button><Link to="/baptismal">back</Link></button>
-
+    <div className="btn-position">  <button className="back-btn"><Link to="/baptismal"><BsArrowRight/></Link></button><h1>Baptismal Package</h1></div>
 
 
     </div>
@@ -228,8 +228,7 @@ export function BP3(){
 export function Customizationbp(){
     return(<>
     <div className="Birthday-Package-Information">
-    <button><Link to="/baptismal">back</Link></button>
-    <h1>Baptismal Package</h1>
+    <div className="btn-position"><button className="back-btn"><Link to="/baptismal"><BsArrowRight/></Link></button></div>
     <h2>Customize your own Package</h2>
 
         <p><ul>
@@ -242,7 +241,7 @@ export function Customizationbp(){
         </ul>
         </p>
 
-        <div className="Button-Proceed"><button><Link to="/bdpform">Proceed</Link></button></div>
+        <div className="Button-Proceed"><button><Link to="/bpform">Proceed</Link></button></div>
     </div>
     </>);
 }
@@ -250,7 +249,7 @@ export function BPForm(){
     return(<>
     <div className="BDPForm-Container">
 
-<button><Link to="/customizationbp">Back</Link></button><h1>Baptismal Package</h1>
+<button className="back-btn"><Link to="/baptismal"><BsArrowRight/></Link></button><h1>Baptismal Package</h1>
 <form action="post">
 <label >Budget:</label><input type="number" name="Customer-Budget" min='15000' placeholder="Minimum of 15,000" required/> <br />
 <label >No. of Guest:</label><input type="number" name="Customer-Budget"  placeholder="Minimum of 50 Guest" min='50' required/> 
@@ -266,7 +265,7 @@ export function BPForm(){
         <li>ITEM 5</li>
         <li>ITEM 6</li>
     </ul>
-<div className="Generate-btn"><button>Generate</button>  <button><Link to="/reservationform">Proceed</Link></button></div>
+<div className="Generate-btn"><button>Generate</button>  <button type="button"><Link to="/reservationform">Proceed</Link></button></div>
 </div>
 
 </div>

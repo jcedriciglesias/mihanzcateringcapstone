@@ -44,6 +44,7 @@
 }
 .menu-Card-Selection li:hover{
     box-shadow: 0px 0px 10px yellow;
+    cursor: pointer;
 }
 .Food-Container{
     color: white;
@@ -78,9 +79,17 @@
     color: black;
     background-color: wheat;
     border-radius: 20px;
+    cursor: pointer;
+}
+.Food-Card-Menu:hover{
+box-shadow:  0px 0px 20px yellowgreen;
 }
 .Food-name p{
     margin: 0;
+}
+.Food-name h2{
+    font-size: 30px;
+    margin-top: 14%;
 }
 .Food-name{
     font-family: Arial;
@@ -95,9 +104,21 @@
     width: 100%;
     border-radius: 20px;
 }
-/*.Food-Description{
-    margin: 0;
+.Food-Description{
     font-size: 20px;
-    background-color: gainsboro;
-    text-align: justify;
-}*/
+}
+.back-btn{
+    height: 30px;
+    width: 60px;
+    position: absolute;
+    right: 2%;
+    background-color: transparent;
+    border-style: none;
+}.back-btn a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+.back-btn :hover{
+    color: yellowgreen;
+}

@@ -8,6 +8,33 @@
     margin-bottom: 100px;
 
 }
+.Services-Container .bd{
+    background:linear-gradient( rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("/src/Pages/Image/bd2.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.Services-Container .bd:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("/src/Pages/Image/bd2.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Services-Container .bp{
+    background:linear-gradient( rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url("/src/Pages/Image/baptismal.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Services-Container .bp:hover{
+    background:linear-gradient( rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url("/src/Pages/Image/baptismal.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.Services-Container a:hover{
+    font-size: 65px;
+}
+
+
 .Services-Container h1 {
     font-size: 67px;
     margin-bottom: 100px;
@@ -28,7 +55,8 @@
     justify-content: center;
     height: 100%;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 60px;
+    align-items: center;
 }
 
 .Services-Container li{
@@ -71,7 +99,7 @@
     background: linear-gradient(45deg, rgba(1, 81, 255, 0.74), rgba(255, 2, 171, 0.678));
 }
 .Event-Container li:hover{
-    box-shadow: 0px 0px 10px yellow;
+    box-shadow: 0px 0px 20px yellowgreen;
 }
 .Event-Container li h1{
     margin: 0;
@@ -202,4 +230,15 @@ flex-direction: column;
 .Reservation-Container h1{
     margin-bottom: 100px;
     font-size:67px;
+}
+.back-btn a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+.back-btn :hover{
+    color: yellowgreen;
+}
+.btn-position{
+    display: flex;
 }

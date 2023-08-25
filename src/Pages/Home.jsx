@@ -1,6 +1,8 @@
+import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar';
 import './Styles/Home.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 export default function Home(){
     return (
         <>
@@ -63,7 +65,7 @@ function Reservationinformation(){
             <li>We can customize your package base on your budget</li>
             <li>Check out our menu below</li>
         </ul>
-        <div><button> <Link to="menu">Check out our Menu</Link> </button></div>
+        <div><button type="button"> <Link to="menu">Check out our Menu</Link> </button></div>
 
     </div>
         </>
@@ -82,15 +84,23 @@ return (
 <p><b id="red">Red</b> means it's Occupied</p>
 </div>
 
-<div>
-    <Calendar /> 
+<div className="calendar">
+    <ReactCalendar / > 
 </div>
-
-
-
-</div>   
-    
-    
+</div>      
     </>
+);
+}
+
+const ReactCalendar = () =>{
+    const [date, setDate] = useState(new Date());
+
+const onChange = date =>{
+    setDate(date);
+}
+return(
+    <div>
+      <Calendar onChange={onChange} value={date} />
+</div>
 );
 }

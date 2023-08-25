@@ -8,6 +8,7 @@ nav{
     top: 0;
     position: sticky;
     
+    
 }   
 nav ul{
     list-style: none;
@@ -21,7 +22,8 @@ nav li{
 nav a{
     color: inherit;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 25px;
+    letter-spacing: 3px;
 }
 nav h1{
     font-size: 35px;
