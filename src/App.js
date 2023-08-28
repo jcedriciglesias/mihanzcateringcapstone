@@ -5,7 +5,7 @@ import Home from './Pages/Home.jsx';
 import Menu from './Pages/Menu.js';
 import Services from './Pages/Services.js';
 import Theme from './Pages/Theme.js';
-import Login from './Pages/Form.jsx';
+import Login, { SignUp } from './Pages/Form.jsx';
 import{Pork,Beef,Chicken,Fish,Vegetables,Pasta,Desserts,Drinks,SeaFood} from './Pages/Menu.js';
 import { Birthday,Baptismal,BDP1,BDP2,BDP3,Customizationbdp,BP1,BP2,BP3,BDPForm,BPForm,Ratings,Customizationbp,ReservationForm} from './Pages/Services.js';
 import { Route, Routes, useLocation } from 'react-router-dom';
@@ -43,6 +43,7 @@ import { useEffect,} from 'react';
           <Route path="/services" element={<Services/>}/>
           <Route path="/theme" element={<Theme/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
           <Route path="/pork" element={<Pork/>}/>
           <Route path="/beef" element={<Beef/>}/>
           <Route path="/chicken" element={<Chicken/>}/>

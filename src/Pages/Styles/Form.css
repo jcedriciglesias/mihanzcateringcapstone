@@ -7,11 +7,13 @@
 }
 .Login-Container h1 {
     font-size: 50px;
+    
+    color: yellowgreen;
 }
 .Login-Container form{
     display: flex;
     height: 60vh;
-    background-color: white;
+    background-color: #ffffff78;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -27,13 +29,12 @@
     height: 5vh;
     width: 60%;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     padding: 2px;
     border-style: none;
-    background: #b5b3b3;
 }
 .btn-Login {
-    margin-top: 50px;
+    margin-top: 20px;
     display:flex;
     position: relative;
     justify-content: flex-end;
@@ -43,11 +44,54 @@
     width: 24vh;
     height: 5vh;
     margin: 20px;
-    border-radius: 50px;
+    border-radius: 6px;
     font-size: 22px;
     border:none;
 }
 .btn-Login button:hover{
-    box-shadow: 0px 0px 10px rgb(255, 0, 0);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
 
+}
+.btn-Login button a{
+    text-decoration: none;
+    color:black;
+}
+.SignUp-Container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 100px ;
+}
+.SignUp-Container h1{
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: yellowgreen;
+    
+}
+.SignUp-Form{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff78;
+    justify-content: center;
+    align-items: center;
+}
+.SignUp-Form input{
+    height: 5vh;
+    width: 60%;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 2px;
+    border-style: none;
+
+}
+.SignUp-Form label{
+    font-size: 25px;
+    margin: 10px;
 }

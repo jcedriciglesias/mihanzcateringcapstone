@@ -15,7 +15,7 @@ return(
     <ul>
         <li>
             <label for="getInTouch">Get in touch</label>
-            <br/><Link href="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer"><FaFacebook/>Facebook</Link>
+            <br/><Link to="https://www.facebook.com/profile.php?id=100066545202436" target="_blank" rel="noreferrer"><FaFacebook/>Facebook</Link>
         </li>
         <li>
             <label for="Contact">Contact</label><br/>
